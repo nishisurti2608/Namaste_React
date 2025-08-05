@@ -23,13 +23,16 @@ function App() {
     
     <>
     <Header/>
-
-    <h1 className="text-2xl text-white mb-12">Top Restaurant Chains In Ahmedabad</h1>
-    <div className="mx-20 my-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+    <div className="mx-20 my-20">
+      <h1 className="text-2xl  text-white mb-12">Top Restaurant Chains In Ahmedabad</h1>
+       <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
 
    
       {restaurantData.map((restaurant) =><RestaurantCard key={restaurant.info.id} data={restaurant} /> )}
     </div>
+
+    </div>
+   
      
     </>
   )
