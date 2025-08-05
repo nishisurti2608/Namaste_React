@@ -22,7 +22,7 @@ function App() {
     <Header/>
 
     <div className="mx-20 my-20">
-      <h1 className="text-2xl text-white mb-20">Top Restaurant Chains In Ahmedabad</h1>
+      <h1 className="text-2xl text-white mb-12">Top Restaurant Chains In Ahmedabad</h1>
       <RestaurantCard data={restaurantData} />
     </div>
      
