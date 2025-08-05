@@ -1,8 +1,10 @@
 
 import { RiUser3Line } from "react-icons/ri";
-import { IoIosHelpCircleOutline,IoIosSearch} from "react-icons/io";
+import { IoIosHelpCircleOutline,IoIosSearch,IoIosMoon} from "react-icons/io";
 import { BsBag } from "react-icons/bs";
 import { CiDiscount1 } from "react-icons/ci";
+
+
 
 
 
@@ -26,6 +28,8 @@ const Header = () => {
                 <li className='flex items-center gap-2 hover:text-orange-500 cursor-pointer'><IoIosHelpCircleOutline className='size-5' />Help</li>
                 <li className='flex items-center gap-2 hover:text-orange-500 cursor-pointer'><RiUser3Line  className='size-4'/>Sign In</li>
                 <li className='flex items-center gap-2 hover:text-orange-500 cursor-pointer'><BsBag className='size-4' />Cart</li>
+                <li className='flex items-center gap-2 hover:text-orange-500 cursor-pointer'><IoIosMoon className="size-4" /></li>
+                
              </ul>
         </nav>
 
