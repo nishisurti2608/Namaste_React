@@ -3,7 +3,7 @@ import { MdStars, MdDeliveryDining } from "react-icons/md";
 const RestaurantCard = (props) => {
 
   const{name,avgRating,sla,cloudinaryImageId,aggregatedDiscountInfoV3,cuisines} = props.data.info
-  const offer = aggregatedDiscountInfoV3.header +" "+ aggregatedDiscountInfoV3.subHeader
+  const offer = aggregatedDiscountInfoV3?.header +" "+ aggregatedDiscountInfoV3?.subHeader
   const IMG_URL =  import.meta.env.VITE_IMG_URL;
 
 
@@ -25,7 +25,7 @@ const RestaurantCard = (props) => {
               alt="Restaurant"
             />
             <div className="absolute bottom-0 left-0 w-full bg-[#2D3250]/90 px-4 py-2">
-              <h2 className="text-lg font-bold text-white uppercase">{offer}</h2>
+              <h2 className="text-lg font-bold text-white uppercase">{offer ? offer : " "}</h2>
             </div>
           </div>
 

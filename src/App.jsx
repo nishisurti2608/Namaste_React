@@ -11,7 +11,7 @@ function App() {
 
   useEffect(()=>{
   
-    fetch("https://corsproxy.io/?key=94df20e1&url=https://www.swiggy.com/dapi/restaurants/list/v5?lat=23.022505&lng=72.5713621&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING")
+    fetch("https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=23.022505&lng=72.5713621&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING")
    
     .then(res => res.json())
     .then (data => setRestaurantData(data.data.cards[1].card.card.gridElements.infoWithStyle.restaurants))
