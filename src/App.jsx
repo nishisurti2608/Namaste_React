@@ -4,6 +4,17 @@ import RestaurantCard from "./Components/RestaurantCard"
 
 function App() {
 
+  const restaurantData = {
+  
+  name:"Pizza Hut",
+  cusine: ["Pizza","salad"],
+  star: "4.6",
+  price: "Items At ₹199",
+  deliveryTime: "15 to 26 Minutes"
+
+  
+  }
+
 
   return (
     
@@ -12,7 +23,7 @@ function App() {
 
     <div className="mx-20 my-20">
       <h1 className="text-2xl text-white mb-20">Top Restaurant Chains In Ahmedabad</h1>
-      <RestaurantCard/>
+      <RestaurantCard data={restaurantData} />
     </div>
      
     </>
