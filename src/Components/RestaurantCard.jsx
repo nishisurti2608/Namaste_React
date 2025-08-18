@@ -5,13 +5,15 @@ import { PiMoney } from "react-icons/pi";
 
 const RestaurantCard = (props) => {
 
-  console.log(props.data.info)
+
   const{name,areaName,avgRating,sla,costForTwo,cloudinaryImageId,aggregatedDiscountInfoV3,cuisines} = props.data.info
   const offer = aggregatedDiscountInfoV3?.header +" "+ aggregatedDiscountInfoV3?.subHeader
   const IMG_URL =  import.meta.env.VITE_IMG_URL;
 
 
   return (
+
+
 
     <div className="relative group w-80">
       {/* Top border animation */}
@@ -20,6 +22,9 @@ const RestaurantCard = (props) => {
       {/* Left border animation */}
       <span className="absolute top-0 left-0 w-[2px] bg-orange-500 h-0 group-hover:h-full transition-all duration-500"></span>
 
+  
+
+      {/* card design */}
       <div className="flex  flex-col text-white cursor-pointer hover:scale-95 transition-transform duration-300">
         <div className="max-w-sm w-80 rounded-xl overflow-hidden shadow-lg">
           <div className="relative">
